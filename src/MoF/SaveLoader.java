@@ -89,7 +89,7 @@ public class SaveLoader {
 				HashMap<String, Tag> rootMap = new HashMap<String, Tag>(root.getValue());
 				ArrayList<Tag> posTag = new ArrayList<Tag>(((ListTag)rootMap.get("Pos")).getValue());
 				posTag.set(0, new DoubleTag("x", x));
-				posTag.set(1, new DoubleTag("y", 120));
+				posTag.set(1, new DoubleTag("y", 60));
 				posTag.set(2, new DoubleTag("z", y));
 				rootMap.put("Pos", new ListTag("Pos", DoubleTag.class, posTag));
 				root = new CompoundTag("Data", rootMap);
